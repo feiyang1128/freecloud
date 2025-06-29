@@ -38,7 +38,9 @@
 
 在 GitHub 仓库中配置以下环境变量：
 
-**Settings → Secrets and variables → Actions**
+**方式1：直接跳转** 👉 [点击进入Secrets配置页面](../../settings/secrets/actions) → 点击 **"New repository secret"** 按钮
+
+**方式2：手动导航**：Settings → Secrets and variables → Actions → New repository secret
 
 #### 必需配置
 
@@ -53,7 +55,6 @@
 1. 访问 [fc.whoer.pp.ua](https://fc.whoer.pp.ua)
 2. 输入您的 GitHub 用户名
 3. 系统会自动验证您的 Star 状态并生成相应权限的 API Key
-4. 复制生成的 API Key 到 `FREECLOUD_API_KEY` 配置中
 
 **权限说明：**
 - 🆓 **未Star用户**：1个账号，每日1次
@@ -157,7 +158,7 @@
 **注意：** 确保您在 main 分支上启用工作流！
 
 1. 确保在 **main 分支**
-2. 进入仓库的 **Actions** 标签页
+2. 进入仓库的 [**Actions**](../../actions/workflows/freecloud-renew.yml) 标签页
 3. 如果是第一次使用，点击 **"I understand my workflows, go ahead and enable them"**
 4. 找到 **"FreeCloud 自动续期"** 工作流
 5. 点击 **"Enable workflow"**
@@ -173,7 +174,7 @@
 ### 手动执行
 
 1. 确保您在 **main 分支** 上
-2. 进入 **Actions** 标签页
+2. 进入 [**Actions**](../../actions/workflows/freecloud-renew.yml) 标签页
 3. 选择 **"FreeCloud 自动续期"** 工作流
 4. 点击 **"Run workflow"**
 5. 可选择是否 **"跳过延迟执行"**（默认勾选，立即执行）
